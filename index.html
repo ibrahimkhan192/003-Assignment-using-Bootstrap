@@ -207,7 +207,7 @@
           </div>
           <div class="col-md-7 my-5 m-md-0 p-4 py-md-4">
             <div>
-              <h1>Explore The Elearning Institute</h1>
+              <h1>Explore The Elearning<br>Institute</h1>
               <p>
                 There are many variations of passages of Lorem Ipsum available, but the 
                 majority have suffered alteration in some form, by injected humour, or 
@@ -253,9 +253,41 @@
                   <p class="my-3">It is a long established fact that a reader will be distracted by<br> 
                   readable content of a page when looking at its layout.</p>
               </div>
-              <form>
-                <a href="" type="submit" class="btn btn-light py-sm-3 px-sm-5 ms-3">Regester Now</a>
-              </form>
+              <div>
+              <button class="btn btn-light py-sm-3 px-sm-5 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Regester Now</button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header bg-brand text-brand">
+                      <h3 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">Register Today</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                         </div>
+                       <div class="offcanvas-body copyright">
+                        <h2 class="text-center mb-3 display-7 text-color">Fill in the data below</h2>
+                      <form action="" class="border py-4 px-3 rounded-2">
+                        <input class="form-control" type="text" placeholder="Full Nmae" aria-label="default input example">
+                        <input class="form-control mt-4" type="email" placeholder="Email" aria-label="default input example">
+                        <input class="form-control mt-4" type="number" placeholder="Phone Number" aria-label="default input example">
+                        <select class="form-select form-select-sm mt-3" aria-label=".form-select-sm example">
+                          <option selected>Slect Your Course</option>
+                          <option value="1">Web Development</option>
+                          <option value="2">Fullstack Web Development</option>
+                          <option value="3">App Development</option>
+                          <option value="4">UI/UX Design</option>
+                          <option value="5">Javascript Basic to advanced</option>
+                        </select>
+                         <div class="form-check mt-4">
+                          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                          <label class="form-check-label text-white" for="defaultCheck1">
+                          By start this course you agree to the <br> <a class="text-decoration-none text-color" href="">Terms & Conditions</a>
+                          </label>
+                        </div>
+                        <div class="text-center mt-4">
+                          <button class="btn bg-brand text-brand text-white border-warning" type="submit">Submit form</button>
+                          <button class="btn bg-brand text-brand text-white border-warning ms-3" type="reset">Reset form</button>
+                        </div>
+                      </form>
+                   </div>
+                 </div>
+              </div>
             </div>
           </div>
     </section>
