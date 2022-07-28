@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap');
 
+
+:root {
+    --primary: #F3BD00;
+    --secondary: #757575;
+    --light: #F3F6F8;
+    --dark: #0C2B4B;
+}
 body{
 font-family: 'Roboto', sans-serif;
-}
-
-.display-7{
- font-family: 'Bebas Neue', cursive;
 }
 
 div, h1, h2, h3{
  margin: 0;
  padding: 0;
+}
+
+.display-7{
+    font-family: 'Bebas Neue', cursive;
+}
+.bg-special{
+ background: #dce3e6;
 }
 
 /*** Header ***/
@@ -27,7 +37,7 @@ div, h1, h2, h3{
 /*  z-index: 1; */
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
  #header-carousel .carousel-item {
      position: relative;
      min-height: 450px;
@@ -39,4 +49,48 @@ div, h1, h2, h3{
      height: 100%;
      object-fit: cover;
  }
+ .w-sm-100{
+    width:100%;
+   }
+}
+/*** Footer ***/
+footer{
+   background: #0C2B4B; 
+}
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--light);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    background: #092139;
+}
+
+.copyright a {
+    color: var(--primary);
+}
+
+.copyright a:hover {
+    color: var(--light);
 }
