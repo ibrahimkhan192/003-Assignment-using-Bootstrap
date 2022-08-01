@@ -54,7 +54,7 @@ div, h1, h2, h3,p{
  z-index: 1;
 }
 /*** Footer ***/
-footer{
+.bg-footer{
    background: var(--dark); 
 }
 .footer .btn.btn-link {

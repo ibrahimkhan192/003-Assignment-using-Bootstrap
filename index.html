@@ -277,15 +277,20 @@
                 <p class="my-3">It is a long established fact that a reader will be distracted by<br> 
                 readable content of a page when looking at its layout.</p>
               </div>
-          <div>
-             <button class="btn btn-light py-sm-3 px-sm-5 ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Regester Now</button>
-                <div class="offcanvas offcanvas-start m-auto" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-                  <div class="offcanvas-header bg-brand text-brand">
-                     <h3 class="offcanvas-title text-center" id="offcanvasWithBothOptionsLabel">Register Today</h3>
-                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                      </div>
-                       <div class="offcanvas-body copyright">
-                          <h2 class="text-center mb-3 display-7 text-color">Fill in the data below</h2>
+          <div>       
+             <!-- Button trigger modal -->
+            <button type="button" class="btn btn-light py-sm-3 px-sm-5 ms-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Regester Now</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content rounded-3">
+                  <div class="modal-header bg-brand">
+                    <h5 class="modal-title " id="exampleModalLabel">Register Today</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bg-footer">
+                    <h2 class="text-center mb-3 display-7 text-color">Fill in the data below</h2>
                       <form action="" class="border py-4 px-3 rounded-2">
                             <input class="form-control" type="text" placeholder="Full Nmae" aria-label="default input example">
                             <input class="form-control mt-4" type="email" placeholder="Email" aria-label="default input example">
@@ -309,7 +314,9 @@
                            <button class="btn bg-brand text-brand text-white border-warning ms-3" type="reset">Reset form</button>
                         </div>
                       </form>
-                   </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -624,7 +631,7 @@
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>============================<<<<<<<<<<<<<<<<<<<<<
 ****************************** Footer Start************************************
 >>>>>>>>>>>>>>>>>>>>>>>>============================<<<<<<<<<<<<<<<<<<<<<<<<-->
-  <footer class="mt-5">
+  <footer class="mt-5 bg-footer">
     <div class="container-fluid  text-light footer my-5 mb-0 py-5" data-wow-delay="0.1s">
       <div class="container">
           <div class="row g-5">
